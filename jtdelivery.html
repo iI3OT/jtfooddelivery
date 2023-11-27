@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jt Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        #featured {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        #contact {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ecf0f1;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button[type="submit"] {
+            background-color: #3498db;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #Resume {
+            background-color: #ffffff;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        button[type="resume"] {
+            background-color: #27ae60;
+        }
+
+        button[type="resume"]:hover {
+            background-color: #219250;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        </style>
+
+</head>
+<body>
+
+    <header>
+        <h1><img src="images/logo.png" width="50" height="50"> JT Delivery</h1>
+        <p>Your one-stop shop for delicious and fresh food!</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Specials</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section id="featured">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="images/Burger.jpg" width="400" alt="Delicious Burger">
+            <h3>Burger</h3>
+            <p>Juicy beef patty with fresh lettuce and tomatoes.</p>
+            <p class="price">₱59.50</p>
+            <button>Order</button>
+        </div>
+
+        <div class="product">
+            <img src="images/Pizza.jpg" width="400" alt="Delicious Pizza">
+            <h3>Pizza</h3>
+            <p>Classic Margherita with mozzarella and tomatoes.</p>
+            <p class="price">₱99.99</p>
+            <button>Order</button>
+        </div>
+
+        <div class="product">
+            <img src="images/Shake.jpg" width="400 "alt="Delicious Shake">
+            <h3>Shake</h3>
+            <p>Sweet Chocolate shake with sweetcream and cherry on top.</p>
+            <p class="price">₱59.00</p>
+            <button>Order</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or special requests? Contact us!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="Resume">
+        <button type="resume">
+            <a href="Resume.pdf" target="_blank">Open Curriculum Vitae</a>
+        </button>
+    </section>    
+
+    <footer>
+        <p>&copy; 2023 Jt Delivery</p>
+    </footer>
+
+</body>
+</html>
